@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bv4345bf1wisa"]
 
 [ext_resource type="Texture2D" uid="uid://mpc1qb2w4tfq" path="res://Tiles.png" id="1_6as8o"]
-[ext_resource type="Script" path="res://Minesweeper.gd" id="2_eounq"]
+[ext_resource type="Script" uid="uid://cmxnww7f4dyk3" path="res://Minesweeper.gd" id="2_eounq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4lnry"]
 texture = ExtResource("1_6as8o")
