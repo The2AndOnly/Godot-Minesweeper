@@ -173,7 +173,8 @@ func revealAllMines(avoid : Array[Vector2i]) -> void:
 		for x in range(CELL_ROWS):
 			cellCoords = Vector2i(x, y)
 			if cells[getCellIndex(cellCoords)] == 0:
-				if not avoid.has(cellCoords):
+				# If it was a bomb
+				if not avoid.has(cellCoords) && getAtlasCoords(cellCoords) != Vector2i(1, 0):
 					set_cell(0, cellCoords, 0, Vector2i(2, 0))
 			else:
 				# If it wasn't a bomb and flag is on the cell
